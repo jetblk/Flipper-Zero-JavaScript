@@ -8,17 +8,19 @@
 //                                                             
 // JavaScript App Template
 // Version 1.0
+//
+// Author: JetBlk (https://github.com/jetblk || https://discord.com/users/415611606408364062/)
 // 
 // This script is to act as boilerplate for a BadUSB + USB Mass Storage app setup.
 // Execution example would be handled in multiple phases: primary and secondary.
 // Primary phase will execute some commands, secondary phase will be used for exfiltrating data.
 //
+// ************ Tested on Momentum Firmware Dev Build d81e72d (April 9, 2024) ************
+//
 // Example - Environment: Linux
 // - Primary Phase: Elevate privledges to root utilizing any method you wish
 // - Secondary Phase: Now that you have root access, Exfil data to USB Mass storage
 // - Further phases can be added for creating a new root user, establishing c2, etc
-//
-// Author: JetBlk (https://github.com/jetblk || https://discord.com/users/415611606408364062/)
 //
 
 let badusb = require("badusb");
