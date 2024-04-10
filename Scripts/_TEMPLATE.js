@@ -14,7 +14,7 @@
 // Primary phase will execute some commands, secondary phase will be used for exfiltrating data.
 //
 // Example - Environment: Linux
-// - Primary Phase: Elevate privledges to root (utilizing any method)
+// - Primary Phase: Elevate privledges to root utilizing any method you wish
 // - Secondary Phase: Now that you have root access, Exfil data to USB Mass storage
 // - Further phases can be added for creating a new root user, establishing c2, etc
 //
@@ -50,7 +50,7 @@ let image = "/ext/apps_data/mass_storage/" + imageName + ".img";
 let size = 8 * 1024 * 1024;
 
 // ************
-// Primary Script Definition
+// Primary Script Definition - This example does not include code to elevate privledges
 let primary = [
     { message: "Executing: id", command: "id", delay: 5000 },
     { message: "Executing: uname -a", command: "uname -a", delay: 1000 },
