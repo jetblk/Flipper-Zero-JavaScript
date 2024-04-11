@@ -39,7 +39,7 @@
 
 ## Contact
 
-[Discord](https://discord.gg/ZbNN6Xm8Gg) |
+[Discord](https://discord.com/users/415611606408364062/) |
 [Twitter](https://twitter.com/jetblk)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
