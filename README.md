@@ -32,7 +32,8 @@
 
 | Payloads                                                                                                        | Description                                                                                       | Plug'n'Play | Author      |
 | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :-----------| :-----------|
-| [_TEMPLATE](TBD)                | This script is to act as boilerplate for a BadUSB + USB Mass Storage app setup.      |⛔️           | JetBlk      |
+| [_TEMPLATE](https://github.com/jetblk/Flipper-Zero-JavaScript/blob/main/Scripts/_TEMPLATE.js)                | This script is to act as boilerplate for a BadUSB + USB Mass Storage app setup.      |⛔️           | JetBlk      |
+| [CVE-2024-1086](https://github.com/jetblk/Flipper-Zero-JavaScript/blob/main/Scripts/CVE-2024-1086.js)                | CVE-2024-1086 exploit, sudo user creation, and exfil /etc/shadow to F0 USB Mass Storage      |✅           | JetBlk      |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
